@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: rgb(15, 15, 70);
+    }
+
+    .work-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .experience-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-left: 4px solid #0077cc;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .role {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #0077cc;
+    }
+
+    .organization {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .duration {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .work-section {
+        margin: 20px;
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .role {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="work-section">
+    <h1>Work Experience</h1>
+
+    <div class="experience-card">
+      <div class="role">Design Head</div>
+      <div class="organization">IEEE Student Chapter, RSCOE</div>
+      <div class="duration">June 2023 – March 2024</div>
+      <div class="description">
+        Led the design team for the IEEE Student Chapter, where I created event posters, branding materials, and social media graphics. I ensured cohesive visual communication for workshops, seminars, and guest lectures, while mentoring junior designers and introducing creative tools like Figma to the team.
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="role">Web Development Member</div>
+      <div class="organization">Nexus Club</div>
+      <div class="duration">2022 – Present</div>
+      <div class="description">
+        Active contributor to Nexus, the web development club. Collaborated on several student-led projects, practiced frontend and backend skills, and helped junior peers get started with HTML, CSS, and JavaScript. Frequently participated in code reviews and idea pitching sessions.
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="role">Hackathon & Tech Competitor</div>
+      <div class="organization">SIH, Kirloskar Vasundhara & Others</div>
+      <div class="duration">2022 – Present</div>
+      <div class="description">
+        Participated in national-level hackathons like Smart India Hackathon (SIH) and Kirloskar Vasundhara. Worked on real-world problems including sustainability and social innovation. Roles involved ideation, UI design, and frontend development. Gained hands-on experience in rapid prototyping, teamwork, and presentation.
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="role">Real-World Problem Solver</div>
+      <div class="organization">Personal & College Projects</div>
+      <div class="duration">Ongoing</div>
+      <div class="description">
+        Continuously involved in identifying real-world problems and building solutions, especially through college projects. Focus areas include accessibility, education, and digital infrastructure. Passionate about learning and applying skills that make a positive impact on society.
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

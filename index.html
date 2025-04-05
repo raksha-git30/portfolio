@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(9, 9, 40);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around; /*spacing between portfolio and titlebar */
+        align-items: center;
+        background-color: rgb(20, 20, 97);
+        height: 80px;
+      }
+
+      .portfolio {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none; /*removing bullets */
+        align-items: center;
+      }
+
+      nav ul li {
+        padding: 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(143, 114, 218);
+      }
+      /* main section css */
+
+      .first {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .first > div {
+        width: 300px;
+        height: 200px;
+      }
+
+      .leftSide {
+        margin-top: 20px;
+        padding: 50px;
+        padding-top: 30px;
+        align-items: center;
+        /* background-color: blueviolet; */
+        font-size: 2rem;
+        margin-left: 100px;
+      }
+
+     .buttons .download{
+        border-radius: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color: rgb(100, 65, 240);
+        height: 35px;
+        padding: 10px;
+        color: white;
+      }
+
+      .buttons .github{
+        border-radius: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color:  rgb(100, 65, 240);
+        height: 35px;
+        padding: 10px;
+        color: white;
+      }
+      .purple {
+        color: rgb(181, 135, 224);
+        
+      }
+
+      #element {
+        color:rgb(181, 135, 224) ;
+      }
+
+      .rightSide {
+        margin-top: 40px;
+        padding: 40px;
+        /* background-color: rgb(84, 6, 157); */
+        font-size: 2rem;
+        align-items: center;
+      }
+
+      .rightSide img {
+        height: 200px;
+        width: auto;
+      }
+
+      hr {
+        border: 0;
+        height: 1.5px;
+        background-color: rgb(79, 79, 133);
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      footer {
+        height: 50px;
+        background-color: rgb(18, 18, 76);
+      }
+
+      footer .footer-item {
+        display: flex;
+        align-items: center; 
+         
+        margin-left: 350px;
+      }
+
+
+      footer h3 {
+        margin: 0;
+        padding: 0;
+        font-size: smaller;
+        color: gray;
+        text-align: center;
+      }
+
+      footer h3 div{
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="portfolio">Raksha's Portfolion</div>
+        <div class="titlebar">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="workexperience.html">Work Experience</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="finalcontact.html">Contact ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first">
+        <div class="leftSide">
+          Hi,I am <span class="purple"><i><b>Raksha</b></i></span>
+          <div>and i am a passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+          <button class="download">Download Resume</button>
+          <button class="github">GitHub</button>
+        </div>
+
+        </div>
+        <div class="rightSide">
+          <img src="wtImage.png" alt="image of web developer" />
+        </div>
+      </section>
+    </main>
+    <!-- word animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "Graphic Designer."],
+        typeSpeed: 100,
+      });
+    </script>
+    <hr />
+
+    <footer>
+      <div class="footer-item">
+        
+        <h3>&copy;All the rights are reserverd of www.rakshaportfolio.com
+             <div>Thank you for visiting my website</div></h3>
+        
+      </div>
+    </footer>
+  </body>
+</html>
