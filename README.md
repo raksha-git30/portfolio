@@ -79,3 +79,5 @@ This website will evolve as I grow professionally, adding more sections, interac
 
 #output  
 
+<img width="1913" height="998" alt="Image" src="https://github.com/user-attachments/assets/ddeebd23-c0cf-4565-b323-be8ca67be185" />
+
